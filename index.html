@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>dev.folio — Portfólio</title>
+<link rel="stylesheet" href="Style.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+
+</head>
+<body>
+
+<canvas id="cvs"></canvas>
+<div class="cur" id="cur"></div>
+<div class="cur-r" id="curR"></div>
+
+<nav id="mainNav">
+  <a href="#" class="nav-logo"><div class="logo-dot"></div>dev.folio</a>
+  <ul class="nav-links">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#processo">Processo</a></li>
+    <li><a href="#depoimentos">Depoimentos</a></li>
+  </ul>
+  <div style="display:flex;gap:12px;align-items:center">
+    <a href="#projetos" class="btn-ghost">Ver trabalhos</a>
+    <a href="#contato" class="btn-primary">Contratar →</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="stars-bg"></div>
+  <div class="hero-glow-top"></div>
+  <div class="hero-glow-bot"></div>
+  <div class="hero-tag"><div class="tag-dot"></div>Disponível para novos projetos</div>
+  <h1 class="htitle">Design que converte,<br/>código que <em>escala.</em></h1>
+  <p class="h-sub">Desenvolvedor em transição de carreira & designer de interfaces. Transformo ideias em produtos digitais que crescem com o seu negócio.</p>
+  <div class="h-btns">
+    <a href="#projetos" class="btn-hp">Ver projetos <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+    <a href="#contato" class="btn-hs">Falar comigo <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="12" height="9" rx="1.5"/><path d="M2 6l6 4 6-4"/></svg></a>
+  </div>
+  <div class="h-rating">
+    <span class="stars-r">★★★★★</span>
+    <span> — Este e um portifólio DEMO de Robson Araujo</span>
+  </div>
+  <div class="h-stats">
+    <div class="h-stat"><div class="hstat-v">0</div><div class="hstat-l">Projetos entregues</div></div>
+    <div class="h-stat"><div class="hstat-v">1 ano</div><div class="hstat-l">de experiência</div></div>
+    <div class="h-stat"><div class="hstat-v">100%</div><div class="hstat-l">Satisfação</div></div>
+  </div>
+</div>
+
+<!-- ARC -->
+<div class="arc-wrap">
+  <div class="o-icon oi1">⚙️</div>
+  <div class="o-icon oi2">🎨</div>
+  <div class="o-icon oi3">📊</div>
+  <div class="o-icon oi4">🚀</div>
+  <div class="o-icon oi5">💻</div>
+  <div class="o-icon oi6">📱</div>
+  <div class="o-icon oi7">🔗</div>
+  <div class="o-icon oi8">⚡</div>
+  <svg class="arc-svg" viewBox="0 0 860 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="ag1" cx="50%" cy="100%" r="70%">
+        <stop offset="0%" stop-color="#e8621a" stop-opacity="1"/>
+        <stop offset="50%" stop-color="#c44a08" stop-opacity=".6"/>
+        <stop offset="100%" stop-color="#3d1500" stop-opacity=".05"/>
+      </radialGradient>
+      <radialGradient id="ag2" cx="50%" cy="100%" r="55%">
+        <stop offset="0%" stop-color="#ff9040" stop-opacity=".55"/>
+        <stop offset="100%" stop-color="#e8621a" stop-opacity="0"/>
+      </radialGradient>
+      <filter id="fg"><feGaussianBlur stdDeviation="7"/></filter>
+      <filter id="fg2"><feGaussianBlur stdDeviation="2.5"/></filter>
+    </defs>
+    <path d="M8 320 A422 422 0 0 1 852 320" stroke="url(#ag1)" stroke-width="52" fill="none" filter="url(#fg)" opacity=".45"/>
+    <path d="M36 320 A392 392 0 0 1 824 320" stroke="url(#ag1)" stroke-width="30" fill="none"/>
+    <path d="M95 320 A335 335 0 0 1 765 320" stroke="url(#ag2)" stroke-width="11" fill="none" filter="url(#fg2)"/>
+    <path d="M150 320 A280 280 0 0 1 710 320" stroke="#e8621a" stroke-width="1.5" fill="none" opacity=".28"/>
+    <path d="M205 320 A225 225 0 0 1 655 320" stroke="#ff9040" stroke-width="1" fill="none" opacity=".15"/>
+    <g stroke="#e8621a" stroke-width="1" opacity=".35">
+      <line x1="36" y1="320" x2="36" y2="294"/>
+      <line x1="140" y1="218" x2="127" y2="196"/>
+      <line x1="275" y1="136" x2="267" y2="113"/>
+      <line x1="430" y1="108" x2="430" y2="82"/>
+      <line x1="585" y1="136" x2="593" y2="113"/>
+      <line x1="720" y1="218" x2="733" y2="196"/>
+      <line x1="824" y1="320" x2="824" y2="294"/>
+    </g>
+    <circle cx="36" cy="320" r="4.5" fill="#e8621a" opacity=".55"/>
+    <circle cx="140" cy="218" r="4.5" fill="#e8621a" opacity=".5"/>
+    <circle cx="275" cy="136" r="5.5" fill="#ff9040" opacity=".75"/>
+    <circle cx="430" cy="108" r="7" fill="#ffb060" opacity=".9"/>
+    <circle cx="585" cy="136" r="5.5" fill="#ff9040" opacity=".75"/>
+    <circle cx="720" cy="218" r="4.5" fill="#e8621a" opacity=".5"/>
+    <circle cx="824" cy="320" r="4.5" fill="#e8621a" opacity=".55"/>
+  </svg>
+  <div class="c-orb">🔥</div>
+</div>
+
+<div class="trust">
+  <div class="trust-lbl">Tecnologias que Estou estudando e dominando</div>
+  <div class="trust-logos">
+    <div class="t-logo"><div class="tl-sq"></div>React em estudos</div>
+    <div class="t-logo"><div class="tl-sq"></div>Next.js em estudos</div>
+    <div class="t-logo"><div class="tl-sq"></div>Node.js em estudos</div>
+    <div class="t-logo"><div class="tl-sq"></div>TypeScript em estudos</div>
+    <div class="t-logo"><div class="tl-sq"></div>Figma em estudos</div>
+    <!--<div class="t-logo"><div class="tl-sq"></div>PostgreSQL</div> -->
+  </div>
+</div>
+
+<div class="mq-wrap">
+  <div class="mq-track">
+    <div class="mq-item"><span class="mq-d"></span>React</div><div class="mq-item"><span class="mq-d"></span>Next.js</div><div class="mq-item"><span class="mq-d"></span>TypeScript</div><div class="mq-item"><span class="mq-d"></span>Node.js</div><div class="mq-item"><span class="mq-d"></span>Figma</div><div class="mq-item"><span class="mq-d"></span>IAs</div><div class="mq-item"><span class="mq-d"></span>Tailwind CSS</div><div class="mq-item"><span class="mq-d"></span></div><div class="mq-item"><span class="mq-d"></span></div><div class="mq-item"><span class="mq-d"></span></div><div class="mq-item"><span class="mq-d"></span></div><div class="mq-item"><span class="mq-d"></span></div>
+    <div class="mq-item"><span class="mq-d"></span>React</div><div class="mq-item"><span class="mq-d"></span>Next.js</div><div class="mq-item"><span class="mq-d"></span>TypeScript</div><div class="mq-item"><span class="mq-d"></span>Node.js</div><div class="mq-item"><span class="mq-d"></span>Figma</div><div class="mq-item"><span class="mq-d"></span>IAs</div><div class="mq-item"><span class="mq-d"></span>Tailwind CSS</div><div class="mq-item"><span class="mq-d"></span></div><div class="mq-item"><span class="mq-d"></span></div><div class="mq-item"><span class="mq-d"></span></div><div class="mq-item"><span class="mq-d"></span></div><div class="mq-item"><span class="mq-d"></span></div>
+  </div>
+</div>
+
+<section>
+  <div class="s-lbl reveal">Por que me contratar</div>
+  <h2 class="s-title reveal rd1">O que torna meu trabalho <em>diferente</em></h2>
+  <p class="s-sub reveal rd2">Soluções completas, sem terceirizar nada, com qualidade de startup Series A e programação assistidas por Inteligência Artificial.</p>
+  <div class="feat-grid">
+    <div class="feat-card reveal"><div class="feat-icon">🚀</div><div class="feat-name">Entrega rápida</div><p class="feat-desc">MVPs em 2–4 semanas. Sem enrolação, sem retrabalho — só resultado.</p></div>
+    <div class="feat-card reveal rd1"><div class="feat-icon">🎨</div><div class="feat-name">Design que converte</div><p class="feat-desc">Interfaces que equilibram estética e performance de conversão.</p></div>
+    <div class="feat-card reveal rd2"><div class="feat-icon">⚡</div><div class="feat-name">Código limpo</div><p class="feat-desc">Arquitetura escalável, testada e documentada para sua equipe crescer.</p></div>
+    <div class="feat-card reveal rd3"><div class="feat-icon">📈</div><div class="feat-name">Foco em ROI</div><p class="feat-desc">Cada decisão técnica orientada ao retorno real do seu negócio.</p></div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="s-lbl reveal">Serviços</div>
+  <h2 class="s-title reveal rd1">O que eu <em>construo</em></h2>
+  <p class="s-sub reveal rd2">Do Figma ao deploy — sem terceirizar nada assistido por Inteligência Artificial.</p>
+  <div class="svc-grid reveal rd2">
+    <div class="svc-card"><div class="svc-num">01</div><div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><div class="svc-name">UI / UX Design</div><p class="svc-desc">Wireframes, protótipos e sistemas de design completos que encantam e convertem.</p><div class="svc-tags"><span class="svc-tag">Figma</span><span class="svc-tag">Prototipação</span><span class="svc-tag">Design System</span></div></div>
+    <div class="svc-card"><div class="svc-num">02</div><div class="svc-icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><div class="svc-name">Desenvolvimento Web</div><p class="svc-desc">Aplicações fullstack rápidas, acessíveis e escaláveis com as melhores tecnologias.</p><div class="svc-tags"><span class="svc-tag">React</span><span class="svc-tag">Node.js</span><span class="svc-tag">TypeScript</span></div></div>
+    <!--<div class="svc-card"><div class="svc-num">03</div><div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div><div class="svc-name">SaaS & Produtos</div><p class="svc-desc">Do MVP ao produto escalável. Auth, pagamentos, dashboards e integrações completas.</p><div class="svc-tags"><span class="svc-tag">Next.js</span><span class="svc-tag">Stripe</span><span class="svc-tag">AWS</span></div></div> -->
+  </div>
+</section>
+
+<section id="projetos">
+  <div class="proj-header">
+    <div><div class="s-lbl reveal">Projetos</div><h2 class="s-title reveal rd1">Trabalhos Demos <em>recentes</em></h2></div>
+    <a href="https://github.com/mamedio1" target="_blank" rel="noopener noreferrer" class="btn-ghost reveal rd1">Ver todos →</a>
+  </div>
+  <div class="proj-grid">
+    <div class="proj-card reveal">    <div class="proj-thumb"><div class="proj-bg pb1"><div class="proj-mock"><div class="pm-b" style="width:100%"></div><div class="pm-b" style="width:75%;background:rgba(232,98,26,.38)"> </div><div class="pm-b" style="width:55%"></div><div class="pm-b" style="width:80%;margin-top:8px"></div><div class="pm-b" style="width:60%"></div></div></div><div class="proj-overlay"><a href="https://climaplanetario.netlify.app" class="pb-btn pb-p">Ver projeto</a><a href="https://github.com/mamedio1/ClimaPlaterario" class="pb-btn pb-g">GitHub</a></div></div><div class="proj-info"><div class="proj-meta"><span class="proj-cat">Utilidade</span><span class="proj-year">2026</span></div><div class="proj-name">Clima Planetário </div><p class="proj-desc">Site que mostra o clima em qualquer parte do mundo.</p><div class="proj-stack"><span class="st-tag">Next.js</span><span class="st-tag">IA</span><span class="st-tag">HTML, CSS</span><span class="st-tag">Javascript</span></div></div></div>
+    <div class="proj-card reveal rd1"><div class="proj-thumb"><div class="proj-bg pb2"><div class="proj-mock"><div class="pm-b" style="width:100%"></div><div class="pm-b" style="width:68%;background:rgba(255,144,64,.32)"></div><div class="pm-b" style="width:85%"></div><div class="pm-b" style="width:50%;margin-top:8px"></div><div class="pm-b" style="width:72%"></div></div></div><div class="proj-overlay"><a href="https://new-jokenpo-rouge.vercel.app" class="pb-btn pb-p">Ver projeto</a><a href="https://github.com/mamedio1/NewJOKENPO" class="pb-btn pb-g">GitHub</a></div></div><div class="proj-info"><div class="proj-meta"><span class="proj-cat">Jogo</span><span class="proj-year">2026</span></div><div class="proj-name">Jokenpô</div><p class="proj-desc">O Clássico game jogado pelo mundo todo, ainda tem um player de rádio onlie.</p><div class="proj-stack"><span class="st-tag">React</span><span class="st-tag">Node.js</span><span class="st-tag">IA</span><span class="st-tag">Javascript</span></div></div></div>
+    <div class="proj-card reveal rd2"><div class="proj-thumb"><div class="proj-bg pb3"><div class="proj-mock"><div class="pm-b" style="width:100%"></div><div class="pm-b" style="width:80%;background:rgba(196,74,8,.4)">   </div><div class="pm-b" style="width:60%"></div><div class="pm-b" style="width:90%;margin-top:8px"></div></div></div><div class="proj-overlay"><a href="https://calculosradiofrequencia.netlify.app" class="pb-btn pb-p">Ver projeto</a><a href="https://calculosradiofrequencia.netlify.app" class="pb-btn pb-g">GitHub</a></div></div><div class="proj-info"><div class="proj-meta"><span class="proj-cat">Radioamador</span><span class="proj-year">2026</span></div><div class="proj-name">Calculos de RF</div><p class="proj-desc">Calcular antena, ressonância voltado para Radioamadores.</p><div class="proj-stack"><span class="st-tag">MTML, CSS</span><span class="st-tag">IA</span><span class="st-tag">Javascript</span></div></div></div>
+    <div class="proj-card reveal rd3"><div class="proj-thumb"><div class="proj-bg pb4"><div class="proj-mock"><div class="pm-b" style="width:100%"></div><div class="pm-b" style="width:70%;background:rgba(232,98,26,.28)"> </div><div class="pm-b" style="width:55%"></div><div class="pm-b" style="width:85%;margin-top:8px"></div></div></div><div class="proj-overlay"><a href="#" class="pb-btn pb-p">Ver projeto</a><a href="#" class="pb-btn pb-g">?????</a></div></div><div class="proj-info"><div class="proj-meta"><span class="proj-cat">????????</span><span class="proj-year">?????</span></div><div class="proj-name">????????</div><p class="proj-desc">????????</p><div class="proj-stack"><span class="st-tag">???????</span><span class="st-tag">????????</span><span class="st-tag">??????????</span></div></div></div>
+  </div>
+</section>
+
+<section id="processo">
+  <div class="s-lbl reveal">Como trabalho</div>
+  <h2 class="s-title reveal rd1">Processo <em>transparente</em></h2>
+  <p class="s-sub reveal rd2">Sem surpresas, sem atrasos. Do briefing ao deploy.</p>
+  <div class="proc-list">
+    <div class="proc-item reveal"><div class="proc-num">01</div><div><div class="proc-name">Discovery <span class="proc-tag">1–2 dias</span></div><p class="proc-desc">Entendimento profundo do problema, objetivos de negócio e requisitos técnicos. Entregável: briefing e escopo definido.</p></div></div>
+    <div class="proc-item reveal rd1"><div class="proc-num">02</div><div><div class="proc-name">Design & Prototipação <span class="proc-tag">3–5 dias</span></div><p class="proc-desc">Wireframes, fluxos e protótipos interativos no Figma. Revisões ilimitadas até aprovação total.</p></div></div>
+    <div class="proc-item reveal rd2"><div class="proc-num">03</div><div><div class="proc-name">Desenvolvimento <span class="proc-tag">1–3 semanas</span></div><p class="proc-desc">Código limpo, testado e documentado. Updates semanais com demo ao vivo e deploy em staging.</p></div></div>
+    <div class="proc-item reveal rd3"><div class="proc-num">04</div><div><div class="proc-name">Launch & Suporte <span class="proc-tag">Contínuo</span></div><p class="proc-desc">Deploy em produção, monitoramento e 30 dias de suporte gratuito pós-lançamento.</p></div></div>
+  </div>
+</section>
+
+<section id="depoimentos">
+  <div class="s-lbl reveal">Depoimentos</div>
+  <h2 class="s-title reveal rd1">O que dizem <em>os clientes</em></h2>
+  <div class="testi-grid">
+    <div class="testi-card reveal"><div class="t-stars">★★★★★</div><p class="t-text">"????????????"</p><div class="t-author"><div class="t-av av1">?</div><div><div class="t-name">?????????</div><div class="t-role">?????</div></div></div></div>
+    <div class="testi-card reveal rd1"><div class="t-stars">★★★★★</div><p class="t-text">"????????????????????"</p><div class="t-author"><div class="t-av av2">??</div><div><div class="t-name">???????????</div><div class="t-role">Product Manager, TaskAI</div></div></div></div>
+    <div class="testi-card reveal rd2"><div class="t-stars">★★★★★</div><p class="t-text">"???????????????????????"</p><div class="t-author"><div class="t-av av3">??</div><div><div class="t-name">????????</div><div class="t-role">???????????</div></div></div></div>
+  </div>
+</section>
+
+<div class="cta-wrap" id="contato">
+  <div class="cta-box reveal">
+    <div class="cta-glow"></div>
+    <div class="cta-lbl">Pronto para começar?</div>
+    <h2 class="cta-title">Vamos construir algo<br/><em>incrível juntos</em></h2>
+    <p class="cta-sub">Respondo em até 24h. Primeira conversa gratuita e sem compromisso.</p>
+    <div class="cta-acts">
+      <a href="mailto:mamedio1@outlook.com" class="btn-cta">Enviar proposta <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      <a href="#" class="btn-ghost">Ver disponibilidade</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <a href="#" class="foot-logo"><div class="logo-dot"></div>dev.folio</a>
+  <ul class="foot-links">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#processo">Processo</a></li>
+    <li><a href="https://github.com/mamedio1" target="_blank">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/robson-mamedio-araujo-dev/" target="_blank">LinkedIn</a></li>
+  </ul>
+  <div class="foot-copy">© 2025 dev.folio Robson Araujo— Todos os direitos reservados</div>
+</footer>
+
+<script src="./Script.js"></script>
+
+
+</body>
+</html>
